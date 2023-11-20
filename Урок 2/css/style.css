@@ -1,0 +1,144 @@
+
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(-45deg, #52bdee, #3f3ce7, #23a6d5, #7f23d5);
+    background-size: 400% 400%;
+    height: 100vh;
+    animation: gradient 15s ease infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+  .container {
+    width: 350px;
+    height: 350px;
+    border-radius: 5px;
+    background-color: white;
+  }
+
+  .container-reg {
+    width: 350px;
+    height: 550px;
+    border-radius: 5px;
+    background-color: white;
+  }
+
+  p {
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+    padding: 10px;
+    margin: 10px 10px 50px 10px;
+    color: #3d3aff;
+  }
+
+  .input{
+    display: flex;
+    justify-content: center;
+  }
+
+  .input-log {
+    font-size: 15px;
+    padding: 10px;
+    margin: 8px;
+    width: 275px;
+    border-radius: 20px;
+    border-color: #3d3aff;
+    border-width: 2px;
+  }
+
+  .input-reg {
+    font-size: 15px;
+    padding: 10px;
+    margin: 5px;
+    width: 275px;
+    border-radius: 10px;
+    border-color: #3d3aff;
+    border-width: 2px;
+  }
+
+  #login-but {
+    font-size: 20px;
+    font-weight: 500;
+    color: #fff;
+    background-color: #3d3aff;
+    padding: 8px 20px;
+    margin: 10px;
+    border-radius: 20px;
+    border-width: 0px;
+    width: 150px;
+  }
+
+  #login-but:hover
+  {
+    opacity: 1;
+    background-color: #0300c7;
+  }
+
+  #login-but:active
+  {
+    background-color: #020092;
+  }
+
+  #reg-but {
+    font-size: 20px;
+    font-weight: 500;
+    color: #fff;
+    background-color: #7700ff;
+    padding: 8px 20px;
+    margin: 50px 10px 5px 10px;
+    border-radius: 10px;
+    border-width: 0px;
+    width: 300px;
+  }
+
+  #reg-but:hover
+  {
+    opacity: 1;
+    background-color: #6100cf;
+  }
+
+  #reg-but:active
+  {
+    background-color: #4b00a0;
+  }
+
+  #in-but {
+    font-size: 20px;
+    font-weight: 500;
+    color: #fff;
+    background-color: #4400ff;
+    padding: 8px 20px;
+    margin: 5px;
+    border-radius: 10px;
+    border-width: 0px;
+    width: 300px;
+  }
+
+  #in-but:hover
+  {
+    opacity: 1;
+    background-color: #3700ce;
+  }
+
+  #in-but:active
+  {
+    background-color: #2e00ad;
+  }
+  
+  a {
+    margin: 10px;
+  }
