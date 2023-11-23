@@ -34,11 +34,28 @@ button {
 
 li {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column;
     border: 1px black solid;
     padding: 4px;
     border-radius: 4px;
+}
+
+input {
+    margin: 5px;
+}
+
+.task-info {
+    display: flex;
+    width: 830px;
+    justify-content: space-between;
+}
+
+.more-info {
+    display: none;
+    background-color: beige;
+    border-top: 1px solid #000000;
+    margin-top: 5px;
+    padding: 10px;
 }
 
 .todo-form {

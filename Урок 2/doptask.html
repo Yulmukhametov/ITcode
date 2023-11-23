@@ -31,25 +31,53 @@
             <input name="visible-todos" class="radio-show" id="radio1" type="radio" checked>
             <label for="radio2" class="todo-radio-label">Скрыть задачи</label>
             <input name="visible-todos" class="radio-hide" id="radio2" type="radio">
+            <script>
+                document.addEventListener('DOMContentLoaded', function() {
+                    var todoItems = document.querySelectorAll('.task-info');
+        
+                    todoItems.forEach(function(item) {
+                        item.addEventListener('click', function() {
+
+                            var moreInfo = item.nextElementSibling;
+    
+                            if (moreInfo.style.display === 'none' || moreInfo.style.display === '') {
+                                moreInfo.style.display = 'block';
+                            } else {
+                                moreInfo.style.display = 'none';
+                            }
+                        });
+                    });
+                });
+            </script>
             <ul>
                 <li>
-                    <div>
-                        <input type="checkbox">
-                        <span>Текст Задачи</span>
+                    <div class="task-info">
+                        <div>
+                            <input type="checkbox">
+                            <span>Текст Задачи</span>
+                        </div>
+                        <div>
+                            <button class="edit-button" data-title="Ввести изменения">Редактировать задачу</button>
+                            <button class="delete-button" data-title="Удалить задачу безвозвратно">Удалить задачу</button>
+                        </div>
                     </div>
-                    <div>
-                        <button class="edit-button" data-title="Ввести изменения">Редактировать задачу</button>
-                        <button class="delete-button" data-title="Удалить задачу безвозвратно">Удалить задачу</button>
+                    <div class="more-info">
+                        More info
                     </div>
                 </li>
                 <li>
-                    <div>
-                        <input type="checkbox">
-                        <span>Текст Задачи</span>
+                    <div class="task-info">
+                        <div>
+                            <input type="checkbox">
+                            <span>Текст Задачи</span>
+                        </div>
+                        <div>
+                            <button class="edit-button" data-title="Ввести изменения">Редактировать задачу</button>
+                            <button class="delete-button" data-title="Удалить задачу безвозвратно">Удалить задачу</button>
+                        </div>
                     </div>
-                    <div>
-                        <button class="edit-button" data-title="Ввести изменения">Редактировать задачу</button>
-                        <button class="delete-button" data-title="Удалить задачу безвозвратно">Удалить задачу</button>
+                    <div class="more-info">
+                        More info
                     </div>
                 </li>
             </ul>
