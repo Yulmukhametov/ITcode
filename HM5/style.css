@@ -1,0 +1,41 @@
+button {
+    font-size: large;
+    font-weight: 700;
+    padding: 10px;
+    margin: 15px;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: rgb(197, 197, 197);
+}
+button:active {
+    background-color: rgb(136, 136, 136);
+}
+
+li {
+    border: 2px solid #000000;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 5px;
+    list-style-type: none;
+}
+
+li:hover {
+    background-color: #d4d4d4;
+}
+
+li:active {
+    background-color: #a5a5a5;
+}
+
+#content {
+    border: 2px solid #000000;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 5px;
+}
+
+select {
+    margin: 10px;
+}
